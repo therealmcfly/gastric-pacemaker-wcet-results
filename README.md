@@ -8,7 +8,7 @@ During the WCET analysis of the pacemaker's processing pipeline using the Heptan
 
 * **-O0 (No Optimization):** Successfully compiled and analyzed. The Heptane documentation implicitly recommends avoiding optimizations that change loop ordering, making `-O0` a standard baseline to ensure the analyzed Control Flow Graph (CFG) perfectly matches actual execution. The detailed `-O0` results are preserved below as our baseline.
 * **-O1 Optimization:** Successfully compiled and analyzed. Because this represents a much more realistic embedded deployment scenario while still preserving necessary loop structures, the `-O1` results (Static WCET: 1,872 cycles) are featured as the primary results in our main paper.
-* **-O2 Optimization:** Compilation failed. Attempting to use higher optimization levels resulted in assembler errors related to Call Frame Information (CFI) directives during Heptane's extraction phase, making `-O2` incompatible with the current toolchain.
+* **-O2 Optimization:** Compilation failed. Attempting to use higher optimization levels resulted in assembler errors related to Call Frame Information (CFI) directives (specifically `.cfi_startproc` and `.cfi_endproc` mismatches) during the assembly phase of Heptane's extraction script. This caused the subsequent linker and object dump tools to fail, making `-O2` incompatible with the current toolchain configuration.
 
 ## Baseline WCET Analysis (-O0 Compilation)
 
