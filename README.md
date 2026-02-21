@@ -22,7 +22,7 @@ The results below demonstrate the temporal determinism of the FlexPRET precision
 
 The FlexPRET processor showed a highly concentrated distribution with minimal temporal jitter. The static WCET provided a tight, reliable upper bound with only an 11.3% pessimism margin.
 
-![FlexPRET -O0 Distribution](fp_O0.png)
+![FlexPRET -O0 Distribution](fp-O0.png)
 
 ### 2. ARM Cortex-A9 Execution Cycles (-O0)
 * **Measured Worst-Case (HiL):** 68,452 cycles
@@ -30,4 +30,4 @@ The FlexPRET processor showed a highly concentrated distribution with minimal te
 
 In contrast, the ARM Cortex-A9 exhibited a massive execution time spread. While the best-case was slightly faster than FlexPRET, the worst-case stretched to 68,452 cycles due to the non-deterministic nature of the general-purpose architecture and OS scheduling.
 
-![ARM -O0 Distribution](arm_O0.png)
+![ARM -O0 Distribution](arm-O0.png)
