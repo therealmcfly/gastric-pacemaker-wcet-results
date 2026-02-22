@@ -1,6 +1,6 @@
 # Supplementary Material: Hard Real-Time Embedded Implementation of Closed-Loop Gastric Pacemaker
 
-This repository contains supplementary data for our IEEE EMBS conference paper, specifically detailing the compiler optimization constraints and the Worst-Case Execution Time (WCET) analysis performed without compiler optimizations (`-O0`).
+This repository contains supplementary data for our IEEE ISORC conference paper, specifically detailing the compiler optimization constraints and the Worst-Case Execution Time (WCET) analysis performed without compiler optimizations (`-O0`).
 
 ## Compiler Optimization Constraints
 
